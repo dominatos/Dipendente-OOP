@@ -18,12 +18,12 @@ public class Dipendente {
     public double calculasalario()
     {
 
-        if (this.Dipartimento ==Dipartimento.PRODUZIONE)
+        if (this.Dipartimento.equals(Dipartimento.PRODUZIONE))
         {
 
             return this.stipendioBase;
         }
-        else if (this.Dipartimento ==Dipartimento.AMMINISTRAZIONE)
+        else if (this.Dipartimento.equals(Dipartimento.AMMINISTRAZIONE))
         {
 
             double aumento=1.20;
@@ -31,7 +31,7 @@ public class Dipendente {
             return this.stipendioBase*aumento;
 
         }
-        else if (this.Dipartimento == Dipartimento.VENDITE)
+        else if (this.Dipartimento.equals(Dipartimento.VENDITE))
         {
 
             double aumento=1.40;
