@@ -1,6 +1,6 @@
 package Dip;
 
-public enum dipartimento {
+public enum Dipartimento {
     PRODUZIONE,
     AMMINISTRAZIONE,
     VENDITE

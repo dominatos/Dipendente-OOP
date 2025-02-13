@@ -2,16 +2,16 @@ package Dip;
 
 public class DipendentePartTime  extends Dipendente {
     private double stipendioPT;
-    public DipendentePartTime(String matricola, String nomecompl, double stipendioBase, dipartimento dipartimento) {
+    public DipendentePartTime(String matricola, String nomecompl, double stipendioBase, Dipartimento dipartimento) {
         super(matricola, nomecompl, stipendioBase, dipartimento);
 
     }
     public double calculateSalaryPT()
     {
-        this.stipendioPT = getStipendioBase();
-        this.stipendioPT=this.stipendioPT*0.5;
-
-        return this.stipendioPT;
+        //this.stipendioPT = getStipendioBase();
+        //this.stipendioPT=this.stipendioPT*0.5;
+        return getStipendio()*0.5;
+       // return this.stipendioPT;
     }
     public String info() {
 //        System.out.println("Matricola: " + getNomecompl());

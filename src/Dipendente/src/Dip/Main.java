@@ -1,15 +1,15 @@
 package Dip;
 
-import static Dip.dipartimento.*;
+
 
 public class Main {
     public static void main(String[] args) {
 
-        DipendentePartTime dpt4= new DipendentePartTime("dpt1", "CArmine ALlaiza",1200.00,dipartimento.VENDITE);
+        DipendentePartTime dpt4= new DipendentePartTime("dpt1", "CArmine ALlaiza",1200.00,Dipartimento.VENDITE);
         //dpt4.info();
-        Dirigente DR5= new Dirigente("d5","Elon Musk",1200.00, dipartimento.AMMINISTRAZIONE);
+        Dirigente DR5= new Dirigente("d5","Elon Musk",1200.00, Dipartimento.AMMINISTRAZIONE);
         //DR5.info();
-        DipendenteFullTime DFT6 = new DipendenteFullTime("d6", "DIck Brown",1200.00,dipartimento.PRODUZIONE);
+        DipendenteFullTime DFT6 = new DipendenteFullTime("d6", "DIck Brown",1200.00,Dipartimento.PRODUZIONE);
         //DFT6.info();
 
         Dipendente[] arrDipen = new Dipendente[3];
