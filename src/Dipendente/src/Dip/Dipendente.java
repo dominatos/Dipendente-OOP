@@ -7,7 +7,7 @@ public class Dipendente {
     private String nomecompl;
     private double stipendioBase;
     private double stipendio;
-    private Dip.dipartimento dipartimento;
+    private dipartimento dipartimento;
 
 
 

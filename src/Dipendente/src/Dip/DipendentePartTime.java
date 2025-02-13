@@ -3,8 +3,8 @@ package Dip;
 public class DipendentePartTime  extends Dipendente {
     private double stipendioPT;
     private Dip.dipartimento Dipartimento;
-    public DipendentePartTime(String matricola, String nomecompl, double stipendioBase, Dip.dipartimento Dipartimento) {
-        super(matricola, nomecompl, stipendioBase, Dipartimento);
+    public DipendentePartTime(String matricola, String nomecompl, double stipendioBase, dipartimento dipartimento) {
+        super(matricola, nomecompl, stipendioBase, dipartimento);
 
     }
     public double calculateSalaryPT()
