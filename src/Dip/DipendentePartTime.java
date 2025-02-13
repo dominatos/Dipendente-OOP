@@ -25,8 +25,9 @@ public class DipendentePartTime  extends Dipendente {
                 + "\nipo di contratto:  Part Time"
                 + "\nNome del componente: " + getNomecompl()
                 + "\nStipendio Base: " + getStipendioBase()
-                + "\nStipendio: " + this.calculateSalaryPT()
                 + "\nDipartimento: " + getDipartimento().toString()
+                + "\nStipendio: " + this.calculateSalaryPT()
+
                 + "\n***********************************";
     }
 }

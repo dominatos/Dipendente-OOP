@@ -25,8 +25,9 @@ public class Dirigente  extends Dipendente {
                 + "\nipo di contratto: Dirigente"
                 + "\nNome del componente: " + getNomecompl()
                 + "\nStipendio Base: " + getStipendioBase()
-                + "\nStipendio: " + this.calculateSalaryDR()
                 + "\nDipartimento: " + getDipartimento().toString()
+                + "\nStipendio: " + this.calculateSalaryDR()
+
                 + "\n***********************************";
     }
 

@@ -23,8 +23,9 @@ public class DipendenteFullTime extends Dipendente {
                 + "\nipo di contratto:  Full Time"
                 + "\nNome del componente: " + getNomecompl()
                 + "\nStipendio Base: " + getStipendioBase()
-                + "\nStipendio: " + this.calcolaFT()
                 + "\nDipartimento: " + getDipartimento().toString()
+                + "\nStipendio: " + this.calcolaFT()
+
                 + "\n***********************************";
     }
 
