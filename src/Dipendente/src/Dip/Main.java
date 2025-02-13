@@ -9,7 +9,7 @@ public class Main {
         //dpt4.info();
         Dirigente DR5= new Dirigente("d5","Elon Musk",1200.00, Dipartimento.AMMINISTRAZIONE);
         //DR5.info();
-        DipendenteFullTime DFT6 = new DipendenteFullTime("d6", "DIck Brown",1200.00,Dipartimento.PRODUZIONE);
+        DipendenteFullTime DFT6 = new DipendenteFullTime("d6", "DIck Brown",1200.00,Dipartimento.AMMINISTRAZIONE);
         //DFT6.info();
 
         Dipendente[] arrDipen = new Dipendente[3];

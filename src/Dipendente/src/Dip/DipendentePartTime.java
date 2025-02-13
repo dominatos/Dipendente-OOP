@@ -1,7 +1,7 @@
 package Dip;
 
 public class DipendentePartTime  extends Dipendente {
-    private double stipendioPT;
+
     public DipendentePartTime(String matricola, String nomecompl, double stipendioBase, Dipartimento dipartimento) {
         super(matricola, nomecompl, stipendioBase, dipartimento);
 

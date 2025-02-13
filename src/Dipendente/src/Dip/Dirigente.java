@@ -1,7 +1,7 @@
 package Dip;
 
 public class Dirigente  extends Dipendente {
-    private double stipendioDR;
+
     public Dirigente(String matricola, String nomecompl, double stipendioBase, Dipartimento dipartimento) {
         super(matricola, nomecompl, stipendioBase, dipartimento);
 
