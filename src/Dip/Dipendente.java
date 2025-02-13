@@ -15,15 +15,15 @@ public class Dipendente {
         return this.matricola;
     }
     //public double calculateSalary(double stipendioBase)
-    public double calculasalario(double stipendioBase)
+    public double calculasalario()
     {
 
-        if (this.Dipartimento == PRODUZIONE)
+        if (this.Dipartimento ==Dipartimento.PRODUZIONE)
         {
-            this.stipendioBase = stipendioBase;
+
             return this.stipendioBase;
         }
-        else if (this.Dipartimento == AMMINISTRAZIONE)
+        else if (this.Dipartimento ==Dipartimento.AMMINISTRAZIONE)
         {
 
             double aumento=1.20;
@@ -31,7 +31,7 @@ public class Dipendente {
             return this.stipendioBase*aumento;
 
         }
-        else if (this.Dipartimento == VENDITE)
+        else if (this.Dipartimento == Dipartimento.VENDITE)
         {
 
             double aumento=1.40;
@@ -56,11 +56,12 @@ public class Dipendente {
 
     public Dipendente(String matricola, String nomecompl, double stipendioBase, Dipartimento Dipartimento)
         {
+            this.Dipartimento = Dipartimento;
         this.matricola = matricola;
         this.nomecompl = nomecompl;
         this.stipendioBase = stipendioBase;
-        this.stipendio = calculasalario(this.stipendioBase);
-        this.Dipartimento = Dipartimento;
+        this.stipendio = calculasalario();
+
         }
 
 
