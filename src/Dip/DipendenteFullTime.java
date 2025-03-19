@@ -1,14 +1,13 @@
 package Dip;
 
 public class DipendenteFullTime extends Dipendente {
-    public double stipendioFT;
-    public DipendenteFullTime(String matricola, String nomecompl, double stipendioBase, Dipartimento Dipartimento) {
-        super(matricola, nomecompl, stipendioBase, Dipartimento);
+
+    public DipendenteFullTime(String matricola, String nomecompl, double stipendioBase, Dipartimento dipartimento) {
+        super(matricola, nomecompl, stipendioBase, dipartimento);
     }
     public double calcolaFT()
     {
-        this.stipendioFT=getStipendioBase()*1;
-        return this.stipendioFT;
+        return getStipendio()*1;
 
     }
     public String info()

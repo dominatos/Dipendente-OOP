@@ -1,13 +1,13 @@
 package Dip;
 
-import static Dip.Dipartimento.*;
+//import static Dip.dipartimento.*;
 
 public class Dipendente {
     private String matricola;
     private String nomecompl;
     private double stipendioBase;
     private double stipendio;
-    private Dipartimento Dipartimento;
+    private Dipartimento dipartimento;
 
 
 
@@ -18,12 +18,12 @@ public class Dipendente {
     public double calculasalario()
     {
 
-        if (this.Dipartimento.equals(Dipartimento.PRODUZIONE))
+        if (this.dipartimento.equals(Dipartimento.PRODUZIONE))
         {
 
             return this.stipendioBase;
         }
-        else if (this.Dipartimento.equals(Dipartimento.AMMINISTRAZIONE))
+        else if (this.dipartimento.equals(Dipartimento.AMMINISTRAZIONE))
         {
 
             double aumento=1.20;
@@ -31,12 +31,12 @@ public class Dipendente {
             return this.stipendioBase*aumento;
 
         }
-        else if (this.Dipartimento.equals(Dipartimento.VENDITE))
+        else if (this.dipartimento.equals(Dipartimento.VENDITE))
         {
 
             double aumento=1.40;
             //this.stipendioBase = stipendioBase*aumento;
-            return this.stipendioBase*aumento;
+            return this.stipendioBase+(this.stipendioBase*0.40);
         }
         else
         { this.stipendioBase = stipendioBase;
@@ -48,15 +48,15 @@ public class Dipendente {
     public String getNomecompl()  {return this.nomecompl;}
     public double getStipendioBase()  {return this.stipendioBase;}
     public double getStipendio()  {return this.stipendio;}
-    public String getDipartimento()  {return this.Dipartimento.toString();}
+    public String getDipartimento()  {return this.dipartimento.toString();}
 
-    public void setDipartimento(Dipartimento Dipartimento) {
-        this.Dipartimento = Dipartimento;
+    public void setDipartimento(Dipartimento dipartimento) {
+        this.dipartimento = dipartimento;
     }
 
-    public Dipendente(String matricola, String nomecompl, double stipendioBase, Dipartimento Dipartimento)
+    public Dipendente(String matricola, String nomecompl, double stipendioBase, Dipartimento dipartimento)
         {
-            this.Dipartimento = Dipartimento;
+            this.dipartimento = dipartimento;
         this.matricola = matricola;
         this.nomecompl = nomecompl;
         this.stipendioBase = stipendioBase;
